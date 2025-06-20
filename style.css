@@ -43,7 +43,7 @@ img {
 
 .logo-img {
   height: 45px;
-  margin-right: 12px;
+  margin-right: 9px;
   border-radius: 35px;
 }
 
@@ -538,7 +538,7 @@ img {
 
   .logo-img {
     height: 50px;
-    margin-right: 10px;
+    margin-right: 7px;
   }
 
   .company-name {
@@ -554,7 +554,7 @@ img {
     cursor: pointer;
     position: absolute;
     top: 1rem;
-    right: 1.5rem;
+    right: 1.1rem;
     z-index: 1001;
   }
 
