@@ -23,37 +23,34 @@
 
   </head>
   <body>
-    <!-- Header -->
-    <header class="navbar">
-      <div class="navbar-left">
-        <a href="#" class="logo-link">
-          <img
-            src="./images/logo.png"
-            alt="AutoElite Ghana Logo"
-            class="logo-img"
-          />
-          <span
-            class="company-name"
-          >
-            AutoElite Ghana - Drive with style
-          </span>
-        </a>
-      </div>
-      <div class="navbar-right">
-        <nav>
-          <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Showroom</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
+ <!-- Header -->
+<header class="navbar">
+  <div class="header-container">
+    <!-- Logo + Tagline (Left Side) -->
+    <a href="#" class="logo-link">
+      <img src="./images/autoelitelogo.jpg" alt="AutoElite Ghana Logo" class="logo-img" />
+      <span class="company-name">AutoElite Ghana - Drive with style</span>
+    </a>
 
-        </nav>
-        <!-- Hamburger Menu Toggle -->
-  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-</div>
-      </div>
-    </header>
+    <!-- Hamburger for mobile -->
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Navigation Links (Right Side) -->
+    <nav class="nav-links" id="nav-links">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Showroom</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
 
     <!-- Hero -->
     <section class="hero">
@@ -109,7 +106,20 @@
             <p class="price">GHS 450,000</p>
             <button>View Details</button>
           </div>
-           
+          <div class="product-card">
+            <img src="./images/ford22.jpg" alt="Mercedes Benz E-Class" />
+            <h3>2022 Ford F150</h3>
+            <p class="price">GHS 370,000</p>
+            <button>View Details</button>
+          </div>
+           <div class="product-grid">
+          <div class="product-card">
+            <img src="./images/toyotalc.jpg" alt="Toyota Land Cruiser" />
+            <h3>2023 Toyota Land Cruiser</h3>
+            <p class="price">GHS 580,000</p>
+            <button>View Details</button>
+          </div>
+          
           </div>
         </div>
       </div>
@@ -227,6 +237,6 @@
       </div>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
