@@ -56,23 +56,40 @@ img {
   white-space: nowrap;
 }
 
-/* Navigation Links */
+/* Navigation Styles */
 .nav-links ul {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 2rem;
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: white;
   font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  position: relative;
   transition: color 0.3s ease;
+  text-decoration: none; /* Remove default underline */
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-  color: #ffd700; /* Gold color for active/hover */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ff1e00;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links .active::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #ff1e00;
 }
 
 /* Hamburger Menu (Mobile) */
@@ -494,9 +511,8 @@ img {
   font-size: 0.9rem;
   color: #888;
 }
-
-/* Responsive for 768px */
 @media (max-width: 768px) {
+  /* Reduce logo and text size */
   .logo-img {
     height: 32px;
   }
@@ -505,6 +521,7 @@ img {
     font-size: 1rem;
   }
 
+  /* Stack nav menu for mobile */
   .nav-links {
     display: none;
     position: absolute;
@@ -514,6 +531,7 @@ img {
     border: 1px solid #333;
     padding: 15px 20px;
     border-radius: 8px;
+    width: fit-content;
   }
 
   .nav-links ul {
@@ -521,24 +539,18 @@ img {
     gap: 15px;
   }
 
-  .nav-links.show {
+  .nav-links.active {
     display: block;
   }
 
   .hamburger {
     display: block;
   }
-  .hero {
-  background: url("./images/herocar8.jpg") center center/cover no-repeat;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
 }
 
-/* Responsive for 480px and below */
+/* =================== */
+/* Responsive for 480px */
+/* =================== */
 @media (max-width: 480px) {
   .logo-img {
     height: 28px;
@@ -547,12 +559,24 @@ img {
   .company-name {
     font-size: 0.9rem;
   }
+
+  .nav-links {
+    top: 60px;
+    right: 15px;
+    padding: 12px 16px;
+  }
+
+  .nav-links ul {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
+  }
+
   .hero {
-  background: url("./images/herocar8.jpg") center center/cover no-repeat;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
+    height: 100vh;
+    padding: 0 15px;
+    text-align: center;
+  }
 }
