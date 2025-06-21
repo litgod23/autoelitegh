@@ -284,9 +284,10 @@ img {
     font-size: 0.95rem;
   }
 }
+
 /* Category Cards */
 .categories {
-  padding: 60px 0;
+  padding: 60px 20px; /* Add horizontal padding for smaller screens */
   background: #f5f7fa;
 }
 
@@ -311,11 +312,12 @@ img {
 
 .category-card img {
   width: 100%;
-  height: 180px; /* Adjust height as needed */
+  height: 180px;
   object-fit: cover;
-  border-radius: 10px; /* Optional, for a smoother look */
+  border-radius: 10px;
   margin-bottom: 10px;
 }
+
 /* Promo Banner - Flex Layout */
 .promo-banner {
   display: flex;
@@ -546,6 +548,17 @@ img {
   .hamburger {
     display: block;
   }
+   .categories {
+    padding: 40px 15px;
+  }
+
+  .category-card {
+    padding: 15px;
+  }
+
+  .category-card img {
+    height: 160px;
+  }
 }
 
 /* =================== */
@@ -578,5 +591,12 @@ img {
     height: 100vh;
     padding: 0 15px;
     text-align: center;
+  }
+  .category-grid {
+    grid-template-columns: 1fr; /* Stack cards vertically */
+  }
+
+  .category-card img {
+    height: 140px;
   }
 }
