@@ -516,11 +516,11 @@ img {
 @media (max-width: 768px) {
   /* Reduce logo and text size */
   .logo-img {
-    height: 32px;
+    height: 40px;
   }
 
   .company-name {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   /* Stack nav menu for mobile */
