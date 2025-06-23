@@ -566,11 +566,11 @@ img {
 /* =================== */
 @media (max-width: 480px) {
   .logo-img {
-    height: 28px;
+    height: 40px;
   }
 
   .company-name {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
 
   .nav-links {
@@ -589,7 +589,7 @@ img {
 
   .hero {
     height: 100vh;
-    padding: 0 15px;
+    padding: 0 19px;
     text-align: center;
   }
   .category-grid {
